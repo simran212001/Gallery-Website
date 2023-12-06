@@ -1,0 +1,17 @@
+.grid-item{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
+
+/* Media query */
+@media (max-width:768px){
+    .grid-container{
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+        gap: 10px;
+    }
+}
